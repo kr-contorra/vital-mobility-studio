@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Vital Mobility Studio</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <a href="index.html" class="nav-logo">
+    <svg viewBox="0 0 56 64" fill="none"><circle cx="44" cy="9" r="5" fill="#d4761f"/><path d="M28 56 C28 42 42 40 42 26 C42 16 35 10 27 12 C19 14 16 22 19 30 C22 38 34 38 34 48 C34 54 26 58 22 57" stroke="#2d6b6b" stroke-width="3.5" stroke-linecap="round" fill="none"/></svg>
+    <div>
+      <div style="font-size:11px;font-weight:700;letter-spacing:0.12em;color:#2d6b6b;line-height:1.1;">VITAL</div>
+      <div style="font-size:10px;font-weight:500;letter-spacing:0.1em;color:#2d6b6b;line-height:1.1;">MOBILITY</div>
+      <div style="font-size:9px;font-weight:400;letter-spacing:0.14em;color:#2d6b6b;line-height:1.3;">STUDIO</div>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="practices.html">Practices</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="offers.html">Offers</a></li>
+    <li><a href="schedule.html">Schedule</a></li>
+  </ul>
+  <a href="contact.html" class="nav-contact-btn active">Contact</a>
+  <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobile-menu">
+  <ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="practices.html">Practices</a></li><li><a href="blog.html">Blog</a></li><li><a href="services.html">Services</a></li><li><a href="offers.html">Offers</a></li><li><a href="schedule.html">Schedule</a></li><li><a href="contact.html">Contact</a></li></ul>
+</div>
+
+<main>
+
+  <section class="page-hero">
+    <div class="hero-bg" style="background-image:url('https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?auto=format&fit=crop&w=1600&q=80');"></div>
+    <h1><span class="serif-italic">Contact</span> Us</h1>
+    <p>We'd love to hear from you. Reach out to ask questions, book a session, or learn more about what we offer.</p>
+  </section>
+
+  <!-- Contact content -->
+  <section class="bg-white">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Info -->
+        <div class="contact-info">
+          <h3>Get in Touch</h3>
+
+          <div class="contact-detail">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 1.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.06 6.06l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            <div class="contact-detail-text">
+              <p>Phone</p>
+              <a href="tel:+14254995559">+1 425 499 5559</a>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <div class="contact-detail-text">
+              <p>Email</p>
+              <a href="mailto:vitalmobilitystudio@gmail.com">vitalmobilitystudio@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+            <div class="contact-detail-text">
+              <p>Book a Session</p>
+              <a href="schedule.html">View Schedule</a>
+            </div>
+          </div>
+
+          <div class="contact-social">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <div>
+          <form class="contact-form" onsubmit="handleSubmit(event)">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="Full name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="Optional">
+            </div>
+            <div class="form-group">
+              <label for="service">Interested In</label>
+              <select id="service" name="service">
+                <option value="">Select a service...</option>
+                <option>First Session — $70</option>
+                <option>Manual Sessions</option>
+                <option>One-on-One Practices</option>
+                <option>Small Group Classes</option>
+                <option>Full Size Group Class</option>
+                <option>Private Group Practices</option>
+                <option>Simple Sessions Pack</option>
+                <option>Complex Session Pack</option>
+                <option>Program Pack</option>
+                <option>Monthly Membership</option>
+                <option>General Inquiry</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Tell us about your goals or any questions you have..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-teal" style="align-self:flex-start;">Send Message</button>
+            <div id="form-success" style="display:none;padding:16px;background:#e8f5f0;color:#2d6b6b;font-size:14px;border:1px solid #b8ddd4;">
+              Thank you for reaching out. We'll be in touch shortly.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div class="footer-logo">
+      <svg viewBox="0 0 56 64" fill="none"><circle cx="44" cy="9" r="5" fill="#d4761f" opacity="0.8"/><path d="M28 56 C28 42 42 40 42 26 C42 16 35 10 27 12 C19 14 16 22 19 30 C22 38 34 38 34 48 C34 54 26 58 22 57" stroke="rgba(255,255,255,0.75)" stroke-width="3.5" stroke-linecap="round" fill="none"/></svg>
+      <div class="footer-logo-text">Vital Mobility Studio</div>
+    </div>
+    <div class="footer-col"><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="blog.html">Blog</a></li><li><a href="practices.html">Practices</a></li><li><a href="services.html">Services</a></li><li><a href="offers.html">Offers</a></li><li><a href="schedule.html">Schedule</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+    <div class="footer-col"><h4>Contact Info</h4><p><a href="tel:+14254995559">+1 425 499 5559</a></p><p style="margin-top:8px;"><a href="mailto:vitalmobilitystudio@gmail.com">vitalmobilitystudio@gmail.com</a></p></div>
+    <div class="footer-col"><h4>Connect With Us</h4><div class="social-links"><a href="#">Facebook</a><a href="#">Instagram</a></div></div>
+  </div>
+  <div class="footer-bottom">&copy;2026 Vital Mobility Studio. All Rights Reserved.</div>
+</footer>
+
+<script src="js/main.js"></script>
+<script>
+function handleSubmit(e) {
+  e.preventDefault();
+  document.getElementById('form-success').style.display = 'block';
+  e.target.reset();
+}
+</script>
+</body>
+</html>
