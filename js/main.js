@@ -1,24 +1,5 @@
-/* ── Nav: transparent on hero, opaque on scroll ─────── */
+/* ── Nav: always opaque ──────────────────────────────── */
 const nav = document.querySelector('.site-nav');
-const hasHero = document.querySelector('.hero, .page-hero');
-
-function updateNav() {
-  if (!hasHero) return;
-  if (window.scrollY > 40) {
-    nav.classList.remove('nav-top');
-    nav.classList.add('nav-scrolled');
-  } else {
-    nav.classList.add('nav-top');
-    nav.classList.remove('nav-scrolled');
-  }
-}
-if (hasHero) {
-  nav.classList.add('nav-top');
-  window.addEventListener('scroll', updateNav, { passive: true });
-  updateNav();
-} else {
-  nav.classList.add('nav-scrolled');
-}
 
 /* ── Mobile nav toggle ──────────────────────────────── */
 const navToggle = document.querySelector('.nav-toggle');
