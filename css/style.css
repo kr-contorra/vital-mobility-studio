@@ -144,6 +144,8 @@ main { padding-top: 68px; }
   padding: 80px 40px 60px;
   text-align: center;
   border-bottom: 1px solid var(--border);
+  position: relative;
+  overflow: hidden;
 }
 .page-hero h1 { font-family: 'Cormorant Garamond', serif; font-size: clamp(36px, 5vw, 64px); font-weight: 400; }
 .page-hero p { color: var(--text-light); margin-top: 14px; font-size: 15px; }
