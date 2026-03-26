@@ -154,10 +154,17 @@ main { padding-top: 72px; }
   inset: -20%;
   background-size: cover;
   background-position: center;
-  opacity: 0.13;
+  opacity: 0.38;
   will-change: transform;
 }
-/* No dark overlay — keep it airy */
+/* Soft vignette to keep text readable without losing the image */
+.hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at center, rgba(245,237,227,0.15) 0%, rgba(245,237,227,0.55) 100%);
+  z-index: 0;
+}
 .hero-content {
   position: relative;
   z-index: 1;
@@ -211,7 +218,7 @@ main { padding-top: 72px; }
   inset: -20%;
   background-size: cover;
   background-position: center;
-  opacity: 0.1;
+  opacity: 0.22;
   will-change: transform;
   z-index: 0;
 }
