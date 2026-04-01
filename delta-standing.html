@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delta Introduces "SkyStand" Standing-Room Cabins on Select Domestic Routes — Aviation & Travel Report</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Merriweather', Georgia, serif; color: #1a1a1a; background: #fff; line-height: 1.8; font-size: 17px; }
+    a { color: #003a70; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* ── Top bar ────────────────────────── */
+    .topbar {
+      background: #003a70;
+      color: rgba(255,255,255,0.85);
+      padding: 6px 24px;
+      font-family: 'Inter', sans-serif;
+      font-size: 11px;
+      display: flex;
+      justify-content: space-between;
+      letter-spacing: 0.04em;
+    }
+
+    /* ── Masthead ───────────────────────── */
+    .masthead {
+      padding: 16px 24px;
+      border-bottom: 3px solid #003a70;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .masthead h1 {
+      font-family: 'Inter', sans-serif;
+      font-size: 26px;
+      font-weight: 800;
+      color: #003a70;
+      letter-spacing: -0.02em;
+    }
+    .masthead h1 span { color: #c8102e; }
+    .masthead-right {
+      font-family: 'Inter', sans-serif;
+      font-size: 11px;
+      color: #888;
+      text-align: right;
+    }
+
+    /* ── Nav ────────────────────────────── */
+    .site-nav-news {
+      border-bottom: 1px solid #e0e0e0;
+      padding: 10px 24px;
+      display: flex;
+      justify-content: center;
+      gap: 28px;
+      font-family: 'Inter', sans-serif;
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: #555;
+      background: #fafafa;
+    }
+
+    /* ── Alert banner ──────────────────── */
+    .alert-banner {
+      background: #c8102e;
+      color: white;
+      text-align: center;
+      padding: 10px 24px;
+      font-family: 'Inter', sans-serif;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    /* ── Article ────────────────────────── */
+    .article-container {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+    .article-tag {
+      display: inline-block;
+      font-family: 'Inter', sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: white;
+      background: #c8102e;
+      padding: 4px 10px;
+      margin-bottom: 20px;
+    }
+    .article-title {
+      font-family: 'Inter', sans-serif;
+      font-size: clamp(28px, 5vw, 42px);
+      font-weight: 800;
+      line-height: 1.15;
+      margin-bottom: 18px;
+      letter-spacing: -0.02em;
+      color: #0b1d33;
+    }
+    .article-subtitle {
+      font-size: 19px;
+      color: #444;
+      line-height: 1.55;
+      margin-bottom: 24px;
+      font-style: italic;
+    }
+    .article-meta {
+      font-family: 'Inter', sans-serif;
+      font-size: 13px;
+      color: #888;
+      margin-bottom: 32px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #e8e8e8;
+    }
+    .article-meta strong { color: #333; }
+
+    .article-hero {
+      margin-bottom: 28px;
+    }
+    .article-hero img {
+      width: 100%;
+      display: block;
+      border-radius: 4px;
+    }
+    .article-hero-caption {
+      font-family: 'Inter', sans-serif;
+      font-size: 11px;
+      color: #999;
+      margin-top: 8px;
+      font-style: italic;
+    }
+
+    .article-body p { margin-bottom: 22px; }
+    .article-body p:first-of-type::first-letter {
+      font-size: 58px;
+      float: left;
+      line-height: 0.8;
+      margin-right: 8px;
+      margin-top: 8px;
+      color: #003a70;
+      font-weight: 700;
+    }
+
+    .pullquote {
+      margin: 40px 0;
+      padding: 28px 32px;
+      background: #f0f4f8;
+      border-left: 4px solid #003a70;
+      border-radius: 0 8px 8px 0;
+    }
+    .pullquote blockquote {
+      font-family: 'Inter', sans-serif;
+      font-size: 20px;
+      font-weight: 600;
+      font-style: italic;
+      line-height: 1.45;
+      color: #003a70;
+    }
+    .pullquote cite {
+      display: block;
+      font-family: 'Inter', sans-serif;
+      font-size: 12px;
+      font-style: normal;
+      color: #888;
+      margin-top: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .interview-block {
+      background: #f8f9fb;
+      border: 1px solid #e4e8ec;
+      border-radius: 8px;
+      padding: 32px;
+      margin: 36px 0;
+    }
+    .interview-label {
+      font-family: 'Inter', sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: #003a70;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .interview-label::before {
+      content: '';
+      display: block;
+      width: 18px;
+      height: 2px;
+      background: #c8102e;
+    }
+    .interview-q {
+      font-family: 'Inter', sans-serif;
+      font-weight: 700;
+      font-size: 15px;
+      color: #222;
+      margin-bottom: 8px;
+    }
+    .interview-a {
+      color: #444;
+      margin-bottom: 28px;
+      font-size: 16px;
+    }
+    .interview-a:last-child { margin-bottom: 0; }
+
+    .route-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 28px 0;
+      font-family: 'Inter', sans-serif;
+      font-size: 14px;
+    }
+    .route-table th {
+      background: #003a70;
+      color: white;
+      padding: 10px 16px;
+      text-align: left;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-weight: 700;
+    }
+    .route-table td {
+      padding: 10px 16px;
+      border-bottom: 1px solid #eee;
+    }
+    .route-table tr:nth-child(even) { background: #f8f9fb; }
+    .route-table .highlight { background: #fff3cd; font-weight: 600; }
+
+    .info-box {
+      background: #e8f5e9;
+      border: 1px solid #c8e6c9;
+      border-radius: 8px;
+      padding: 20px 24px;
+      margin: 28px 0;
+      font-family: 'Inter', sans-serif;
+      font-size: 14px;
+      color: #2e7d32;
+    }
+    .info-box strong { color: #1b5e20; }
+
+    .related {
+      margin-top: 48px;
+      padding-top: 28px;
+      border-top: 2px solid #003a70;
+    }
+    .related h3 {
+      font-family: 'Inter', sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: #999;
+      margin-bottom: 14px;
+    }
+    .related ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .related a { font-size: 15px; color: #003a70; font-family: 'Inter', sans-serif; font-weight: 600; }
+
+    /* ── Footer ─────────────────────────── */
+    .news-footer {
+      background: #003a70;
+      padding: 28px 24px;
+      text-align: center;
+      font-family: 'Inter', sans-serif;
+      font-size: 11px;
+      color: rgba(255,255,255,0.5);
+    }
+
+    /* ── Reveal ─────────────────────────── */
+    .reveal {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 48px 24px 64px;
+      text-align: center;
+    }
+    .reveal-hidden { display: none; }
+    .reveal h2 {
+      font-family: 'Inter', sans-serif;
+      font-size: 36px;
+      font-weight: 800;
+      color: #003a70;
+      margin-bottom: 12px;
+    }
+    .reveal p {
+      font-size: 18px;
+      color: #555;
+      max-width: 480px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+    .reveal-emoji { font-size: 64px; margin-bottom: 16px; display: block; }
+
+    @media (max-width: 640px) {
+      .masthead { flex-direction: column; gap: 8px; text-align: center; }
+      .masthead-right { text-align: center; }
+      .site-nav-news { gap: 14px; font-size: 10px; flex-wrap: wrap; justify-content: center; }
+      .article-title { font-size: 26px; }
+      .interview-block { padding: 20px; }
+      .route-table { font-size: 12px; }
+      .route-table th, .route-table td { padding: 8px 10px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="topbar">
+    <div>Tuesday, April 1, 2026 &nbsp;&bull;&nbsp; Atlanta, GA</div>
+    <div>Aviation &amp; Travel Report &mdash; Daily Briefing</div>
+  </div>
+
+  <header class="masthead">
+    <h1>Aviation <span>&amp;</span> Travel Report</h1>
+    <div class="masthead-right">
+      Est. 2011 &nbsp;|&nbsp; Independent Industry Coverage<br>
+      Atlanta &bull; Washington &bull; Dallas &bull; Chicago
+    </div>
+  </header>
+
+  <nav class="site-nav-news">
+    <a href="#">Airlines</a>
+    <a href="#">Airports</a>
+    <a href="#">Business Travel</a>
+    <a href="#">Loyalty Programs</a>
+    <a href="#">Fleet &amp; Ops</a>
+    <a href="#">Safety</a>
+    <a href="#">Regulation</a>
+  </nav>
+
+  <div class="alert-banner">Exclusive Report &mdash; Confirmed by Delta Air Lines Corporate Communications</div>
+
+  <article class="article-container">
+    <span class="article-tag">Exclusive</span>
+
+    <h2 class="article-title">Delta Eliminates Economy Seats on Select Routes, Introduces "SkyStand" Standing-Room Cabin Starting This Week</h2>
+
+    <div class="article-subtitle">
+      Carrier says new upright travel pods improve circulation, reduce jet lag, and allow 35% more passengers per aircraft. First Class, Delta One, and lie-flat seating remain unaffected.
+    </div>
+
+    <div class="article-meta">
+      By <strong>Mark Collinsworth</strong> &nbsp;|&nbsp; Aviation &amp; Travel Report, Atlanta &nbsp;&nbsp;&bull;&nbsp;&nbsp; April 1, 2026 &nbsp;&bull;&nbsp; 7 min read
+    </div>
+
+    <div class="article-hero">
+      <img src="https://images.unsplash.com/photo-1436491865332-7a61a109db05?auto=format&fit=crop&w=1200&q=80" alt="View from inside an airplane cabin">
+      <div class="article-hero-caption">Delta will begin converting Main Cabin sections on six high-demand routes starting April 3. Passengers in Delta One and First Class will see no changes. &mdash; Photo: ATR / File</div>
+    </div>
+
+    <div class="article-body">
+
+      <p>Delta Air Lines on Tuesday confirmed what industry insiders have been whispering about for weeks: the carrier will begin removing traditional economy seating on select domestic and cross-country routes, replacing them with a new "SkyStand" configuration — upright travel pods designed for passengers to fly in a standing-supported position for the duration of the flight.</p>
+
+      <p>The airline says the first SkyStand-equipped aircraft will enter service on Thursday, April 3, on six initial routes. Passengers booked in Main Cabin on affected flights will be automatically reassigned to the new SkyStand cabin, with no option to revert to a seated configuration.</p>
+
+      <div class="info-box">
+        <strong>Important:</strong> Delta One, First Class, Delta Premium Select, and Delta Comfort+ cabins are completely unaffected. All lie-flat beds, reclining seats, and premium cabin amenities remain unchanged.
+      </div>
+
+      <p>The SkyStand pods, developed in partnership with aviation seating manufacturer Recaro and Italian design firm Pininfarina, feature a lightly padded backrest angled at 23 degrees, a retractable chest bar for stability during turbulence, and a small shelf at elbow height for personal items and beverages. Passengers are secured by a five-point harness system that Delta calls "ActiveBrace."</p>
+
+      <p>Each pod occupies approximately 40% less floor space than a standard economy seat, allowing Delta to increase Main Cabin capacity on a Boeing 737-900ER from 150 to 203 passengers — a 35% improvement the airline says will help address chronic overselling and reduce the number of involuntary denied boardings.</p>
+
+      <table class="route-table">
+        <thead>
+          <tr>
+            <th>Route</th>
+            <th>Aircraft</th>
+            <th>Start Date</th>
+            <th>Flight(s)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="highlight">
+            <td><strong>Fort Lauderdale (FLL) &rarr; Seattle (SEA)</strong></td>
+            <td>737-900ER</td>
+            <td>April 3, 2026</td>
+            <td>DL 1847, DL 2291</td>
+          </tr>
+          <tr>
+            <td>Atlanta (ATL) &rarr; Los Angeles (LAX)</td>
+            <td>A321neo</td>
+            <td>April 3, 2026</td>
+            <td>DL 455, DL 988</td>
+          </tr>
+          <tr>
+            <td>New York JFK &rarr; San Francisco (SFO)</td>
+            <td>A321neo</td>
+            <td>April 5, 2026</td>
+            <td>DL 710</td>
+          </tr>
+          <tr>
+            <td>Minneapolis (MSP) &rarr; Phoenix (PHX)</td>
+            <td>737-900ER</td>
+            <td>April 7, 2026</td>
+            <td>DL 1602</td>
+          </tr>
+          <tr>
+            <td>Detroit (DTW) &rarr; Orlando (MCO)</td>
+            <td>737-900ER</td>
+            <td>April 7, 2026</td>
+            <td>DL 2088</td>
+          </tr>
+          <tr>
+            <td>Salt Lake City (SLC) &rarr; Honolulu (HNL)</td>
+            <td>A330-900neo</td>
+            <td>April 10, 2026</td>
+            <td>DL 570</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>"SkyStand is not about reducing comfort — it's about redefining it," said Delta CEO Ed Bastian in a press briefing at the airline's Atlanta headquarters. "We've been sitting for a hundred years. The science is clear: sitting for five, six hours in a pressurized cabin is actively harmful. We're giving our customers permission to stand."</p>
+
+      <div class="pullquote">
+        <blockquote>"Nobody has ever gotten off a cross-country flight and said, 'You know what made that great? The sitting.' We're liberating our passengers from the tyranny of the reclined middle seat."</blockquote>
+        <cite>Ed Bastian, CEO, Delta Air Lines</cite>
+      </div>
+
+      <p>Delta pointed to a widely cited 2024 study from the Mayo Clinic showing that prolonged seated positions at altitude increase the risk of deep vein thrombosis (DVT) by up to 12%. The airline says internal trials of the SkyStand configuration showed a 94% reduction in post-flight lower-limb stiffness and a "statistically significant improvement in passenger mood upon deplaning."</p>
+
+      <p>"Passengers in our trials reported feeling more alert, more energized, and — this surprised us — happier," said Dr. Renata Solis, Delta's newly appointed Chief Wellness Officer. "The human body was not designed to sit in a 31-inch pitch seat. It was designed to stand, to move. SkyStand aligns air travel with how our bodies actually want to exist."</p>
+
+      <p>The airline has also introduced what it calls the "StandMile" — a bonus SkyMiles accrual of 1.5x base miles for all SkyStand passengers, plus automatic upgrades to Comfort+ (seated) on connecting flights where available.</p>
+
+      <div class="interview-block">
+        <div class="interview-label">Interview Excerpt &mdash; Ed Bastian, CEO, Delta Air Lines</div>
+
+        <p class="interview-q">ATR: Let's be direct. People are going to say you're just cramming more passengers onto planes.</p>
+        <p class="interview-a">"I understand the reaction. But look at the data. We ran SkyStand trials on the Atlanta-LAX route for four months with volunteer passengers. NPS scores were higher than seated Main Cabin. <em>Higher.</em> You know why? Because in a SkyStand pod, you have your own defined space. Nobody's reclining into your lap. Nobody's elbowing you for the armrest. You stand in your own pod, you watch your screen, you have your drink on your shelf, and you arrive feeling like you actually used your body instead of compressing it into a pretzel for five hours."</p>
+
+        <p class="interview-q">ATR: What about passengers with disabilities or medical conditions?</p>
+        <p class="interview-a">"Absolutely accommodated. Every SkyStand aircraft retains a minimum of six standard seated positions in Main Cabin for passengers who require them. ADA compliance is non-negotiable, and our booking system will automatically assign seated positions for passengers who indicate a need. And again — First Class, Comfort+, and all premium cabins remain 100% seated and unaffected."</p>
+
+        <p class="interview-q">ATR: Is this really about wellness, or is it about revenue per square foot?</p>
+        <p class="interview-a">"<em>[laughs]</em> I won't pretend the economics don't work in our favor. They do. But I've been in this industry long enough to know that if the customer hates it, the economics don't matter. We tested this because we genuinely believed the seated economy experience had reached a dead end. You can't make a 31-inch pitch seat comfortable. You just can't. So we asked: what if we stop trying? What if the answer isn't a better seat — it's no seat at all?"</p>
+
+        <p class="interview-q">ATR: SkyStand pricing?</p>
+        <p class="interview-a">"SkyStand fares are priced 15% below equivalent Main Cabin fares. We want this to be the most accessible way to fly Delta. And with the 1.5x StandMile bonus, our SkyMiles members are going to rack up status faster than ever. Honestly, my fear isn't that people will hate it — it's that Medallion members will start choosing SkyStand over Comfort+ just for the miles."</p>
+      </div>
+
+      <p>Industry reaction has been mixed but curious. Southwest Airlines declined to comment. United Airlines CEO Scott Kirby reportedly told investors on an internal call that United is "monitoring the situation closely." American Airlines issued a brief statement: "We remain committed to providing a seated experience for all passengers at this time."</p>
+
+      <p>The Federal Aviation Administration confirmed that SkyStand pods meet all current Part 25 certification requirements for passenger restraint systems, emergency egress, and impact tolerance. "The configuration has been reviewed and certified," an FAA spokesperson said. "It is compliant."</p>
+
+      <p>Passenger advocacy groups were less measured. FlyersRights.org called the move "the logical conclusion of 25 years of seat-pitch reduction" and announced plans to file a formal complaint with the Department of Transportation.</p>
+
+      <p>SkyStand-equipped flights will be identifiable in Delta's booking system with a small standing-figure icon next to the cabin class. Passengers will receive an email notification 72 hours before departure if their flight has been converted. A full FAQ is available at delta.com/skystand.</p>
+
+      <p><em>This article has been updated with additional route details and FAA confirmation. Aviation &amp; Travel Report will continue coverage as the rollout begins Thursday.</em></p>
+
+    </div>
+
+    <div class="related">
+      <h3>More on This Story</h3>
+      <ul>
+        <li><a href="#">Analysis: What SkyStand Means for the Future of Economy Class</a></li>
+        <li><a href="#">Delta SkyMiles Overhaul: How StandMiles Change the Equation for Medallion Members</a></li>
+        <li><a href="#">FAA Standing-Position Certification: The Technical Details</a></li>
+        <li><a href="#">Opinion: I Flew SkyStand for 5 Hours. Here's What Happened to My Knees.</a></li>
+      </ul>
+    </div>
+
+  </article>
+
+  <footer class="news-footer">
+    <p>&copy; 2026 Aviation &amp; Travel Report. All rights reserved.</p>
+    <p style="margin-top:6px;">An independent publication. Not affiliated with any airline, manufacturer, or regulatory body.</p>
+    <p style="margin-top: 20px; cursor: pointer; color: rgba(255,255,255,0.25); font-size: 10px;" onclick="document.querySelector('.reveal-hidden').style.display='block'; this.style.display='none';">
+      &#9660; Corrections &amp; Clarifications
+    </p>
+  </footer>
+
+  <div class="reveal reveal-hidden">
+    <span class="reveal-emoji">&#9992;&#65039;&#128166;</span>
+    <h2>Happy April Fools'!</h2>
+    <p>Your seat is safe. Delta is not making anyone stand. Enjoy your flight, Mom! &#128153;</p>
+  </div>
+
+<script>
+setTimeout(() => {
+  document.title = document.title + " | April 1st Edition";
+}, 90000);
+</script>
+</body>
+</html>
